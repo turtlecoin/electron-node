@@ -19,7 +19,7 @@ $(document).ready(() => {
     '--rpc-bind-ip 0.0.0.0',
     '--enable-blockexplorer',
     '--load-checkpoints',
-    'checkpoints.csv'
+    'checkpoints-all.csv'
   ]
 
   function log (msg) {
