@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "standard",
-    "fixdeps": "./node_modules/.bin/electron-rebuild",
+    "postinstall": "npm run rebuild",
+    "rebuild": "electron-rebuild -f -w node-pty",
     "start": "electron ."
   },
   "repository": {
@@ -21,12 +22,15 @@
   "dependencies": {
     "download-file": "^0.1.5",
     "node-pty": "^0.8.1",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7",
     "targz": "^1.0.1",
-    "unzip": "^0.1.11",
-    "xterm": "^3.11.0"
+    "unzipper": "^0.10.1",
+    "xterm": "^3.14.5"
   },
   "devDependencies": {
-    "electron": "^4.0.4",
-    "standard": "^12.0.1"
+    "electron": "^5.0.6",
+    "electron-rebuild": "^1.8.5",
+    "standard": "^13.0.1"
   }
 }

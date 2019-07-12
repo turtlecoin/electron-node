@@ -78,7 +78,7 @@ $(document).ready(() => {
     }
   }).then(() => {
     log(util.format('Fetching the latest blockchain checkpoints...'))
-    // return helper.downloadCheckpoints()
+    return helper.downloadCheckpoints()
   }).then(() => {
     log(util.format('Storing the blockchain data in: %s', dataDir))
   }).then(() => {
